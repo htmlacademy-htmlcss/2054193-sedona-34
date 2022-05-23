@@ -159,7 +159,45 @@
 
      </section>
 
-     <section class="subscription">
+     <form class="modal_hotel_search">
+
+      <h2>
+        Поиск гостиницы в Седоне
+      </h2>
+
+      <label for="modal_date_entry">Дата заезда</label>
+
+      <input type="date" id="modal_date_entry" name="modal_date_entry" value="2020-04-27">
+        <p>
+          Мы не можем отправить вас в прошлое.
+        </p>
+
+      <label for="modal_date_out">Дата выезда</label>  
+
+      <input type="date" id="modal_date_out" name="modale_date_out" value="2020-09-01">
+        <p>
+          На эти даты есть свободные номера. Пока есть.
+        </p>
+
+        <div class="modal_numbers_of_persons">
+
+        <label for="modal_adults">Взрослые</label>  
+
+        <input type="input" id="modal_adults" name="modale_adults" value="Через что делать?">
+
+        <label for="modal_childrens">Дети</label>  
+
+        <input type="input" id="modal_childrens" name="modale_childrens" value="Через что делать?">
+
+        <label for="modal_btn_search"></label>
+
+        <input type="button" id="modal_btn_search" name="modal_btn_search" value="Найти">
+
+        </div>
+        
+     </form>
+
+     <section class="subscription subscription_index">
 
       <h2 class="subscription_title">
         Подпишитесь на рассылку
@@ -177,7 +215,7 @@
 
         <label for="submit"></label>
 
-        <input type="submit" id="submit" name="submitn" value="Подписаться">
+        <input type="submit" id="submit" name="submit" value="Подписаться">
 
       </form>
 
@@ -194,8 +232,8 @@
             [vk]
           </li>
 
-          <li class="connection_twitter">
-            [tw]  
+          <li class="connection_telegram">
+            [tele]  
           </li>
 
           <li class="connection_utube">
