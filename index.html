@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
 
@@ -10,31 +11,37 @@
 
       <div class="wrapper_main_menu">
 
-        <img class="logo_img" src="#" alt="Логотип.">
+        <img class="logo_img" src="imgs/png/logo.png" alt="Логотип.">
 
         <nav class="main_menu">
           <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О Седоне</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="#">Главная</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="#">О Седоне</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="catalog.html">Гостиницы</a></li>
           </ul> 
         </nav>
 
         <nav class="control_menu">
           <ul>
             <li>
-              <a href="#"><img src="#" alt="Поиск по сайту."></a>
+              <a href="#">
+                <img src="imgs/icons/icon_search.png" alt="Поиск по сайту.">
+              </a>
             </li>
 
-            <li><a href="#">
-              <img src="#" alt="Избранное.">
-            </a>
+            <li>
+              <a href="#">
+                <img src="imgs/icons/icon_favorites.png" alt="Избранное.">
+              </a>
 
-            <span class="num_favorites">12</span>
+              <span class="num_favorites">12</span>
 
             </li>
 
-            <li><a href="#">Хочу сюда</a></li>
+            <li>
+              <a class="link_wanted" href="#">Хочу сюда!</a>
+            </li>
+
           </ul> 
         </nav>
 
@@ -50,7 +57,9 @@
           Седона
         </h1>
 
-        <img src="#" alt="Надпись 'Sedona'.">
+        <img class="title_sedona_img" src="imgs/title_vector/title_welcom.svg" alt="Надпись 'Welcome '.">
+        <img class="title_sedona_img" src="imgs/title_vector/title_welcom_add.svg" alt="Надпись 'to the Gorgeus'.">
+        <img class="title_sedona_img" src="imgs/title_vector/title_sedona.svg" alt="Надпись 'Sedona'.">
 
         <p class="details_main_title">
           Седона — небольшой городок в Аризоне, заслуживающий большего!
@@ -62,7 +71,7 @@
 
         <div class="details_item">
 
-          <div class="details_item_accent">
+          <div class="details_item_accent details_item_white">
 
             <p class="details_item_title">
               Настоящий городок
@@ -111,7 +120,7 @@
 
           </ul>
 
-          <div class="details_item_accent">
+          <div class="details_item_accent details_item_white">
 
             <p class="details_item_title">
               Там есть мост дьявола
@@ -225,15 +234,15 @@
         <ul class="connection_list">
 
           <li class="connection_item">
-            <a href="https://vk.com/htmlacademy"><img src="#" alt="Иконка 'Вконтакте'."></a>
+            <a href="https://vk.com/htmlacademy"><img src="imgs/icons/icon_vk.png" alt="Иконка 'Вконтакте'."></a>
           </li>
 
           <li class="connection_item">
-            <a href="https://t.me/htmlacademy"><img src="#" alt="Иконка 'Телеграм'."></a>  
+            <a href="https://t.me/htmlacademy"><img src="imgs/icons/icon_telegram.png" alt="Иконка 'Телеграм'."></a>  
           </li>
 
           <li class="connection_item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Иконка 'Ютуб'."></a> 
+            <a href="https://www.youtube.com/user/htmlacademyru"><img src="imgs/icons/icon_utube.png" alt="Иконка 'Ютуб'."></a> 
           </li>
 
         </ul>
@@ -244,7 +253,7 @@
 
         <div class="html_academy_link">
           <a href="https://htmlacademy.ru">
-            <img src="#" alt="Логотип htmlacademy.">
+            <img src="imgs/png/html _academy.png" alt="Логотип htmlacademy.">
           </a> 
         </div>
 

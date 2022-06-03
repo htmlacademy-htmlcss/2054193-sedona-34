@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
 
@@ -10,21 +11,37 @@
 
       <div class="wrapper_main_menu">
 
-        <a><img class="logo_img" src="index.html" alt="Логотип."></a>
+        <a class="link_to_index" href="index.html"><img class="logo_img" src="imgs/png/logo.png" alt="Логотип."></a>
 
         <nav class="main_menu">
           <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">О Седоне</a></li>
-            <li><a href="#">Гостиницы</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="index.html">Главная</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="#">О Седоне</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="#">Гостиницы</a></li>
           </ul> 
         </nav>
 
         <nav class="control_menu">
           <ul>
-            <li><a href="#"><img src="#" alt="Поиск по сайту."></a></li>
-            <li><a href="#"><img src="#" alt="Избранное."></a></li>
-            <li><a href="#">Хочу сюда</a></li>
+            <li>
+              <a href="#">
+                <img src="imgs/icons/icon_search.png" alt="Поиск по сайту.">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="imgs/icons/icon_favorites.png" alt="Избранное.">
+              </a>
+
+              <span class="num_favorites">12</span>
+
+            </li>
+
+            <li>
+              <a class="link_wanted" href="#">Хочу сюда!</a>
+            </li>
+
           </ul> 
         </nav>
 
@@ -42,10 +59,10 @@
 
         <ul class="breadcrumbs">
           <li class="breadcrumbs_item">
-            <img src="#" alt="Иконка 'Гостиницы.'">
+            <img src="imgs/icons/icon_hotel.png" alt="Иконка 'Гостиницы.'">
           </li>
           <li class="breadcrumbs_item">
-            <img src="#" alt="Стрелка 'Вправо'">
+            <img src="imgs/icons/icon_arrow_right.png" alt="Стрелка 'Вправо'">
           </li>
         </ul>
 
@@ -145,7 +162,7 @@
             <li class="hotels_list_item">
 
               <a href="#">
-                <img src="#" class="hotels_list_item_img" alt="Amara Resort & Spa.">  
+                <img src="imgs/hotels/hotel_amara.jpg" class="hotels_list_item_img" alt="Amara Resort & Spa.">  
               </a>
 
               <a class="hotels_list_item_title" href="#">
@@ -175,31 +192,31 @@
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                      <img class="star star_1" src="imgs/icons/star.png" alt="Первая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                      <img class="star star_2" src="imgs/icons/star.png" alt="Вторая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                      <img class="star star_3" src="imgs/icons/star.png" alt="Третья зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                      <img class="star star_4" src="imgs/icons/star.png" alt="Четвертая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                      <img class="star star_5" src="imgs/icons/star.png" alt="Пятая зведа рейтинга.">
                     </a>  
                   </li>
 
@@ -218,7 +235,7 @@
             <li class="hotels_list_item">
 
               <a href="#">
-                <img src="#" class="hotels_list_item_img" alt="Villas at Poco Diablo.">  
+                <img src="imgs/hotels/hotel_villas.jpg" class="hotels_list_item_img" alt="Villas at Poco Diablo.">  
               </a>
 
               <a class="hotels_list_item_title" href="#">
@@ -248,31 +265,31 @@
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                      <img class="star star_1" src="imgs/icons/star.png" alt="Первая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                      <img class="star star_2" src="imgs/icons/star.png" alt="Вторая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                      <img class="star star_3" src="imgs/icons/star.png" alt="Третья зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                      <img class="star star_4" src="imgs/icons/star.png" alt="Четвертая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                      <img class="star star_5" src="imgs/icons/star.png" alt="Пятая зведа рейтинга.">
                     </a>  
                   </li>
 
@@ -291,7 +308,7 @@
             <li class="hotels_list_item">
 
               <a href="#">
-                <img src="#" class="hotels_list_item_img" alt="Desert Quail Inn.">  
+                <img src="imgs/hotels/hotel_desert.jpg" class="hotels_list_item_img" alt="Desert Quail Inn.">  
               </a>
 
               <a class="hotels_list_item_title" href="#">
@@ -321,31 +338,31 @@
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                      <img class="star star_1" src="imgs/icons/star.png" alt="Первая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                      <img class="star star_2" src="imgs/icons/star.png" alt="Вторая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                      <img class="star star_3" src="imgs/icons/star.png" alt="Третья зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                      <img class="star star_4" src="imgs/icons/star.png" alt="Четвертая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                      <img class="star star_5" src="imgs/icons/star.png" alt="Пятая зведа рейтинга.">
                     </a>  
                   </li>
 
@@ -364,7 +381,7 @@
             <li class="hotels_list_item">
 
               <a href="#">
-                <img src="#" class="hotels_list_item_img" alt="GreenTree Inn.">  
+                <img src="imgs/hotels/hotel_greenthree.jpg" class="hotels_list_item_img" alt="GreenTree Inn.">  
               </a>
 
               <a class="hotels_list_item_title" href="#">
@@ -393,32 +410,32 @@
                 <ul class="rating_stars">
 
                   <li class="rating_stars_item">
-                    <a class="stars_item_link">
-                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_2" src="imgs/icons/star.png" alt="Первая зведа рейтинга.">
+                    </a>   
+                  </li>
+
+                  <li class="rating_stars_item" href="#">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_2" src="imgs/icons/star.png" alt="Вторая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                      <img class="star star_3" src="imgs/icons/star.png" alt="Третья зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                      <img class="star star_4" src="imgs/icons/star.png" alt="Четвертая зведа рейтинга.">
                     </a>  
                   </li>
 
                   <li class="rating_stars_item">
                     <a class="stars_item_link" href="#">
-                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
-                    </a>  
-                  </li>
-
-                  <li class="rating_stars_item">
-                    <a class="stars_item_link" href="#">
-                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                      <img class="star star_5" src="imgs/icons/star.png" alt="Пятая зведа рейтинга.">
                     </a>  
                   </li>
 
@@ -507,15 +524,15 @@
         <ul class="connection_list">
 
           <li class="connection_item">
-            <a href="https://vk.com/htmlacademy"><img src="#" alt="Иконка 'Вконтакте'."></a>
+            <a href="https://vk.com/htmlacademy"><img src="imgs/icons/icon_vk.png" alt="Иконка 'Вконтакте'."></a>
           </li>
 
           <li class="connection_item">
-            <a href="https://t.me/htmlacademy"><img src="#" alt="Иконка 'Телеграм'."></a>  
+            <a href="https://t.me/htmlacademy"><img src="imgs/icons/icon_telegram.png" alt="Иконка 'Телеграм'."></a>  
           </li>
 
           <li class="connection_item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="#" alt="Иконка 'Ютуб'."></a> 
+            <a href="https://www.youtube.com/user/htmlacademyru"><img src="imgs/icons/icon_utube.png" alt="Иконка 'Ютуб'."></a> 
           </li>
 
         </ul>
@@ -526,7 +543,7 @@
 
         <div class="html_academy_link">
           <a href="https://htmlacademy.ru">
-            <img src="#" alt="Логотип htmlacademy.">
+            <img src="imgs/png/html _academy.png" alt="Логотип htmlacademy.">
           </a> 
         </div>
 
