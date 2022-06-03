@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+body{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: coral;  
+}
+
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually_hidden{
+    display: none;
+}
+
+.nav_item_link{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.link_wanted{
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    background-color: #756157;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.details_main_title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details_main_text{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.details_item_title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details_item_white{
+    color: white;
+}
+
+.details_item_text{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hotel_search_title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+}

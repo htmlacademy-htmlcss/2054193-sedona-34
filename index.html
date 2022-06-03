@@ -3,10 +3,312 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/style.css">
   </head>
   <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+    <header class="page_header">
+
+      <div class="wrapper_main_menu">
+
+        <img class="logo_img" src="imgs/png/logo.png" alt="Логотип.">
+
+        <nav class="main_menu">
+          <ul>
+            <li class="nav_item"><a class="nav_item_link" href="#">Главная</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="#">О Седоне</a></li>
+            <li class="nav_item"><a class="nav_item_link" href="catalog.html">Гостиницы</a></li>
+          </ul> 
+        </nav>
+
+        <nav class="control_menu">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="imgs/icons/icon_search.png" alt="Поиск по сайту.">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="imgs/icons/icon_favorites.png" alt="Избранное.">
+              </a>
+
+              <span class="num_favorites">12</span>
+
+            </li>
+
+            <li>
+              <a class="link_wanted" href="#">Хочу сюда!</a>
+            </li>
+
+          </ul> 
+        </nav>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="details">
+
+        <h1 class="visually_hidden">
+          Седона
+        </h1>
+
+        <img class="title_sedona_img" src="imgs/title_vector/title_welcom.svg" alt="Надпись 'Welcome '.">
+        <img class="title_sedona_img" src="imgs/title_vector/title_welcom_add.svg" alt="Надпись 'to the Gorgeus'.">
+        <img class="title_sedona_img" src="imgs/title_vector/title_sedona.svg" alt="Надпись 'Sedona'.">
+
+        <p class="details_main_title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+
+        <p class="details_main_text">
+          Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+        </p>
+
+        <div class="details_item">
+
+          <div class="details_item_accent details_item_white">
+
+            <p class="details_item_title">
+              Настоящий городок
+            </p>
+
+            <p class="details_item_text">
+              - №1 -
+            </p>
+
+            <p class="details_item_text">
+              Седона — не аттракцион для туристов, там течёт своя жизнь
+            </p>
+
+          </div>
+
+          <ul class="details_city_advantages">
+            <li class="details_city_list">
+              <p class="details_item_title">
+                Жильё
+              </p>
+
+              <p class="details_item_text">
+                Рекомендуем пожить в настоящем мотеле, всё как в кино!
+              </p>
+            </li>
+
+            <li class="details_city_list">
+              <p class="details_item_title">
+                Еда
+              </p>
+
+              <p class="details_item_text">
+                Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!
+              </p>
+            </li>
+
+            <li class="details_city_list">
+              <p class="details_item_title">
+                Сувениры
+              </p>
+
+              <p class="details_item_text">
+                Не только китайского, но и настоящего местного производства!
+              </p>
+            </li>
+
+          </ul>
+
+          <div class="details_item_accent details_item_white">
+
+            <p class="details_item_title">
+              Там есть мост дьявола
+            </p>
+
+            <p class="details_item_text">
+              - №2 -
+            </p>
+
+            <p class="details_item_text">
+              Да, по нему можно пройти! Если вы осмелитесь, разумеется
+            </p>
+
+          </div>
+
+          <ul class="details_city_advantages">
+            <li class="details_city_list">
+              <p class="details_item_title">
+                Небольшая площадь
+              </p>
+
+              <p class="details_item_text">
+                - №3 -
+              </p>
+
+              <p class="details_item_text">
+                Все достопримечательности находятся очень близко
+              </p>
+            </li>
+
+            <li class="details_city_list">
+              <p class="details_item_title">
+                Красивая дорога
+              </p>
+
+              <p class="details_item_text">
+                - №4 -
+              </p>
+
+              <p class="details_item_text">
+                Ехать в Седону из Лас-Вегаса совсем не скучно!
+              </p>
+            </li>
+
+            <li class="details_city_list">
+              <p class="details_item_title">
+                Мало туристов
+              </p>
+
+              <p class="details_item_text">
+                - №5 -
+              </p>
+
+              <p class="details_item_text">
+                Большинство едет в Гранд Каньон и толпится там
+              </p>
+            </li>
+
+          </ul>
+
+        </div>   
+
+      </section>
+
+      <section class="hotel_search">
+
+        <h2 class="visually_hidden">
+          Поиск гостиницы
+        </h2>
+
+        <p class="hotel_search_title">
+          Заинтересовались?
+        </p>
+
+        <p class="hotel_search_text">
+          Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
+        </p>
+
+        <a href="#">Поиск Гостиницы в Седоне</a>
+
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+
+      <section class="subscription subscription_index">
+
+        <h2 class="subscription_title">
+          Подпишитесь на рассылку
+        </h2>
+ 
+        <p class="subscription_text">
+          Только полезная информация и никакого спама, честное бойскаутское!
+        </p>
+
+        <form class="form_subscription">
+
+          <label for="subscription">Ваш e-mail</label>
+
+          <input type="text" id="subscription" name="subscription">
+
+          <button class="btn_subscription">Подписаться</button>
+
+        </form>
+
+      </section>
+
+      <div class="wrapper_footer_content">
+
+        <ul class="connection_list">
+
+          <li class="connection_item">
+            <a href="https://vk.com/htmlacademy"><img src="imgs/icons/icon_vk.png" alt="Иконка 'Вконтакте'."></a>
+          </li>
+
+          <li class="connection_item">
+            <a href="https://t.me/htmlacademy"><img src="imgs/icons/icon_telegram.png" alt="Иконка 'Телеграм'."></a>  
+          </li>
+
+          <li class="connection_item">
+            <a href="https://www.youtube.com/user/htmlacademyru"><img src="imgs/icons/icon_utube.png" alt="Иконка 'Ютуб'."></a> 
+          </li>
+
+        </ul>
+
+        <address class="phone number">
+          <a href="#"><span class="connection_icon">+7 (812) 812-12-12</span></a> 
+        </address>
+
+        <div class="html_academy_link">
+          <a href="https://htmlacademy.ru">
+            <img src="imgs/png/html _academy.png" alt="Логотип htmlacademy.">
+          </a> 
+        </div>
+
+      </div>
+    </footer>
+
+    <section class="modal_form">
+
+      <h2 class="modal_title">
+        Поиск гостиницы в Седоне
+      </h2>
+
+      <form class="modal_hotel_search">  
+        
+        <label for="modal_date_entry">Дата заезда</label>
+
+        <input type="date" id="modal_date_entry" name="modal_date_entry" value="2020-04-27">
+
+        <p>
+          Мы не можем отправить вас в прошлое.
+        </p>
+        
+        <label for="modal_date_out">Дата выезда</label> 
+
+        <input type="date" id="modal_date_out" name="modale_date_out" value="2020-09-01">
+
+        <p>
+          На эти даты есть свободные номера. Пока есть.
+        </p>
+
+        <div class="modal_numbers_of_persons">
+
+          <label for="modal_adults">Взрослые</label>
+          
+          <button class="btn_minus">-</button>
+
+          <input type="text" id="modal_adults" name="modale_adults">
+
+          <button class="btn_plus">+</button>
+
+          <label for="modal_childrens">Дети</label> 
+          
+          <button class="btn_minus">-</button>
+
+          <input type="text" id="modal_childrens" name="modale_childrens">
+
+          <button class="btn_plus">+</button>
+
+          <button class="btn_search">Найти</button>
+
+        </div>
+        
+      </form>
+
+    </section>
 
   </body>
 </html>
