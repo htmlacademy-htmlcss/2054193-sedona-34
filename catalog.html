@@ -14,7 +14,7 @@
 
         <nav class="main_menu">
           <ul>
-            <li><a href="#">Главная</a></li>
+            <li><a href="index.html">Главная</a></li>
             <li><a href="#">О Седоне</a></li>
             <li><a href="#">Гостиницы</a></li>
           </ul> 
@@ -39,6 +39,15 @@
         <h1 class="hotels_title">
           Гостиницы Седоны
         </h1>
+
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs_item">
+            <img src="#" alt="Иконка 'Гостиницы.'">
+          </li>
+          <li class="breadcrumbs_item">
+            <img src="#" alt="Стрелка 'Вправо'">
+          </li>
+        </ul>
 
         <p class="hotels_text">
           Гостиницы
@@ -80,19 +89,18 @@
 
             <label for="min_price"></label>
             <input type="text" name="min_price" id="min_price">
+            <div class="min_price_slider">&#65794;</div>
 
             <label for="max_price"></label>
             <input type="text" name="max_price" id="max_price">
+            <div class="min_price_slider">&#65794;</div>
 
           </fieldset>
 
           <div class="catalog_wrapper_btns">
 
-            <label for="catalog_btn_apply"></label>
-            <input type="button" id="catalog_btn_apply" name="catalog_btn_apply" value="Применить">
-
-            <label for="catalog_btn_reset"></label>
-            <input type="button" id="catalog_btn_reset" name="catalog_btn_reset" value="Сбросить">
+            <button class="btn_apply">Применить</button>
+            <button class="btn_reset">Сбросить</button>
 
           </div>
 
@@ -110,13 +118,27 @@
             <option>Сначала дешёвые</option>
           </select>
 
-          <div class="hotels_view_type">
+          <ul class="hotels_view_type">
 
-            <img src="#" class="img_view" alt="Отображение 'плиткой'.">
-            <img src="#" class="img_view" alt="Отображение 'слайд с увеличением'.">
-            <img src="#" class="img_view" alt="Отображение 'списком'.">
+            <li class="view_type_item">
+              <a class="view_type_link">
+                <img src="#" class="img_view" alt="Отображение 'плиткой'.">
+              </a>
+            </li>
 
-          </div>
+            <li class="view_type_item">
+              <a class="view_type_link">
+                <img src="#" class="img_view" alt="Отображение 'слайд с увеличением'.">
+              </a>
+            </li>
+
+            <li class="view_type_item">
+              <a class="view_type_link">
+                <img src="#" class="img_view" alt="Отображение 'списком'.">
+              </a>
+            </li> 
+
+          </ul>
 
           <ul class="hotels_list">
 
@@ -126,54 +148,62 @@
                 <img src="#" class="hotels_list_item_img" alt="Amara Resort & Spa.">  
               </a>
 
-              <a href="#">
-                <p class="hotels_list_item_title">Amara Resort & Spa</p> 
+              <a class="hotels_list_item_title" href="#">
+                Amara Resort & Spa
               </a>
 
-              <ul class="hotels_list_type_and_price">
+              <div class="hotels_type_and_price">
 
-                <li class="hotels_list_type">Гостиница</li>
-                <li class="hotels_list_price">От 4000 &#8381;</li>
+                <p class="hotels_type">Гостиница</p>
+                <p class="hotels_price">От 4000 &#8381;</p>
 
-              </ul>
+              </div>
 
-              <ul class="hotels_list_btns_controls">
+              <div class="hotels_controls">
 
-                <li class="hotels_list_type">
-                  <a class="btn_hotels_list_details" href="#">Подробнее</a>
-                </li>
+                <a href="#" class="btn_hotels_list_details">
+                  Подробнее
+                </a>
 
-                <li class="hotels_list_price">
-                  <input class="btn_favorites" type="button" value="В избранное">
-                </li>
+                <button class="btn_hotels_favorites">В избранное</button>
 
-              </ul>
+              </div>
 
               <div class="wrapper_rating">
 
-                <ol class="rating_stars">
+                <ul class="rating_stars">
 
                   <li class="rating_stars_item">
-                    <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    </a>  
                   </li>
 
-                </ol>
+                </ul>
 
                 <div class="rating">
                   <p class="rating_text">
@@ -191,54 +221,62 @@
                 <img src="#" class="hotels_list_item_img" alt="Villas at Poco Diablo.">  
               </a>
 
-              <a href="#">
-                <p class="hotels_list_item_title">Villas at Poco Diablo</p> 
+              <a class="hotels_list_item_title" href="#">
+                Villas at Poco Diablo 
               </a>
 
-              <ul class="hotels_list_type_and_price">
+              <div class="hotels_type_and_price">
 
-                <li class="hotels_list_type">Гостиница</li>
-                <li class="hotels_list_price">От 5000 &#8381;</li>
+                <p class="hotels_type">Гостиница</p>
+                <p class="hotels_price">От 5000 &#8381;</p>
 
-              </ul>
+              </div>
 
-              <ul class="hotels_list_btns_controls">
+              <div class="hotels_controls">
 
-                <li class="hotels_list_type">
-                  <a class="btn_hotels_list_details" href="#">Подробнее</a>
-                </li>
+                <a href="#" class="btn_hotels_list_details">
+                  Подробнее
+                </a>
 
-                <li class="hotels_list_price">
-                  <input class="btn_favorites" type="button" value="В избранном">
-                </li>
+                <button class="btn_hotels_favorites">В избранном</button>
 
-              </ul>
+              </div>
 
               <div class="wrapper_rating">
 
-                <ol class="rating_stars">
+                <ul class="rating_stars">
 
                   <li class="rating_stars_item">
-                    <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    </a>  
                   </li>
 
-                </ol>
+                </ul>
 
                 <div class="rating">
                   <p class="rating_text">
@@ -256,54 +294,62 @@
                 <img src="#" class="hotels_list_item_img" alt="Desert Quail Inn.">  
               </a>
 
-              <a href="#">
-                <p class="hotels_list_item_title">Desert Quail Inn</p> 
+              <a class="hotels_list_item_title" href="#">
+                Desert Quail Inn
               </a>
 
-              <ul class="hotels_list_type_and_price">
+              <div class="hotels_type_and_price">
 
-                <li class="hotels_list_type">Гостиница</li>
-                <li class="hotels_list_price">От 2500 &#8381;</li>
+                <p class="hotels_type">Гостиница</p>
+                <p class="hotels_price">От 2500 &#8381;</p>
 
-              </ul>
+              </div>
 
-              <ul class="hotels_list_btns_controls">
+              <div class="hotels_controls">
 
-                <li class="hotels_list_type">
-                  <a class="btn_hotels_list_details" href="#">Подробнее</a>
-                </li>
+                <a href="#" class="btn_hotels_list_details">
+                  Подробнее
+                </a>
 
-                <li class="hotels_list_price">
-                  <input class="btn_favorites" type="button" value="В избранное">
-                </li>
+                <button class="btn_hotels_favorites">В избранное</button>
 
-              </ul>
+              </div>
 
               <div class="wrapper_rating">
 
-                <ol class="rating_stars">
+                <ul class="rating_stars">
 
                   <li class="rating_stars_item">
-                    <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    </a>  
                   </li>
 
-                </ol>
+                </ul>
 
                 <div class="rating">
                   <p class="rating_text">
@@ -321,54 +367,62 @@
                 <img src="#" class="hotels_list_item_img" alt="GreenTree Inn.">  
               </a>
 
-              <a href="#">
-                <p class="hotels_list_item_title">GreenTree Inn</p> 
+              <a class="hotels_list_item_title" href="#">
+                GreenTree Inn
               </a>
 
-              <ul class="hotels_list_type_and_price">
+              <div class="hotels_type_and_price">
 
-                <li class="hotels_list_type">Гостиница</li>
-                <li class="hotels_list_price">От 1500 &#8381;</li>
+                <p class="hotels_type">Гостиница</p>
+                <p class="hotels_price">От 1500 &#8381;</p>
 
-              </ul>
+              </div>
 
-              <ul class="hotels_list_btns_controls">
+              <div class="hotels_controls">
 
-                <li class="hotels_list_type">
-                  <a class="btn_hotels_list_details" href="#">Подробнее</a>
-                </li>
+                <a href="#" class="btn_hotels_list_details">
+                  Подробнее
+                </a>
 
-                <li class="hotels_list_price">
-                  <input class="btn_favorites" type="button" value="В избранное">
-                </li>
+                <button class="btn_hotels_favorites">В избранное</button>
 
-              </ul>
+              </div>
 
               <div class="wrapper_rating">
 
-                <ol class="rating_stars">
+                <ul class="rating_stars">
 
                   <li class="rating_stars_item">
-                    <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    <a class="stars_item_link">
+                      <img class="star star_1" src="#" alt="Первая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_2" src="#" alt="Вторая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_3" src="#" alt="Третья зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_4" src="#" alt="Четвертая зведа рейтинга.">
+                    </a>  
                   </li>
 
                   <li class="rating_stars_item">
-                    <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    <a class="stars_item_link" href="#">
+                      <img class="star star_5" src="#" alt="Пятая зведа рейтинга.">
+                    </a>  
                   </li>
 
-                </ol>
+                </ul>
 
                 <div class="rating">
                   <p class="rating_text">
@@ -382,33 +436,33 @@
 
           </ul>
 
-          <ol class="pagination_list">
+          <ul class="pagination_list">
 
             <li class="pagination_list_item">
-              <p class="pagination_list_text">1</p>
+              <a class="pagination_list_text" href="#">1</a>
             </li>
 
             <li class="pagination_list_item">
-              <p class="pagination_list_text">2</p>
+              <a class="pagination_list_text" href="#">2</a>
             </li>
 
             <li class="pagination_list_item">
-              <p class="pagination_list_text">3</p>
+              <a class="pagination_list_text" href="#">3</a>
             </li>
 
             <li class="pagination_list_item">
-              <p class="pagination_list_text">4</p>
+              <a class="pagination_list_text" href="#">4</a>
             </li>
 
             <li class="pagination_list_item">
-              <p class="pagination_list_text">...</p>
+              <a class="pagination_list_text" href="#">...</a>
             </li>
 
             <li class="pagination_list_item">
-              <p class="pagination_list_text">10</p>
+              <a class="pagination_list_text" href="#">10</a>
             </li>
 
-          </ol>
+          </ul>
 
           <p class="hotels_of_page">
             Гостиниц на странице:
@@ -442,9 +496,7 @@
 
           <input type="text" id="subscription" name="subscription">
 
-          <label for="submit"></label>
-
-          <input type="submit" id="submit" name="submit" value="Подписаться">
+          <button class="btn_subscription">Подписаться</button>
 
         </form>
 
@@ -468,9 +520,9 @@
 
         </ul>
 
-        <div class="phone number">
+        <address class="phone number">
           <a href="#"><span class="connection_icon">+7 (812) 812-12-12</span></a> 
-        </div>
+        </address>
 
         <div class="html_academy_link">
           <a href="https://htmlacademy.ru">
