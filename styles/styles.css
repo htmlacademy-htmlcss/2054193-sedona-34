@@ -1,0 +1,355 @@
+@font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: "PT Sans";
+    font-style: normal;
+    font-weight: 700;
+    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    font-display: swap;
+  }
+
+body{
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    width: 1200px;
+    padding: 0;
+    margin: auto;
+    box-shadow: 0 0 5px 5px #ccc;
+}
+
+.visually_hidden{
+    display: none;
+}
+
+.wrapper_main_menu{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.main_menu_list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 390px;
+    height: 66px;
+}
+
+.main_menu_item{
+    list-style: none;
+    padding: 0;
+    margin: auto 17px;
+}
+
+.control_menu_list{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 263.87px;
+    height: 66px;
+    margin-left: 237px;
+}
+
+.control_menu_item{
+    list-style: none;
+    padding: 0;
+    margin: auto 34px;
+    
+}
+
+.nav_item_link{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+}
+
+.num_favorites{
+    position: relative;
+}
+
+.link_wanted{
+    font-size: 16px;
+    line-height: 37px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    background-color: #756157;
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.wrapper_title_Sedona{
+    display: block;
+    background: url(../imgs/backgrounds/index_background.jpg) no-repeat lightskyblue;  
+    width: 1200px;
+    height: 485px;
+}
+
+.title_sedona_img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 71px;
+}
+
+.details_main_title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 63px 290px;
+}
+
+.details_main_text{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.details_item_wrapper{
+    width: 1200px;
+    padding: 0;
+    margin: 0;
+}
+
+.details_item_accent_wrapper_hotel{
+    padding: 92px 885px 92px 85px;
+}
+
+.details_item_accent_wrapper_bridge{
+    padding: 92px 85px 92px 885px;
+}
+
+.details_item_title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.details_item_accent_title{
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.details_item_accent_hotel{
+    position:relative;
+}
+
+.details_item_accent_hotel::before{
+    content: "";
+    display: inline-block;
+    height: 384px;
+    width: 800px;
+    background: blue url(../imgs/backgrounds/details_photo_hotel.jpg) no-repeat;
+    background-origin: content-box;
+    position: absolute;
+    left: 400px;
+}
+
+.details_item_accent_bridge{
+    position:relative;
+}
+
+.details_item_accent_bridge::before{
+    content: "";
+    display: inline-block;
+    height: 384px;
+    width: 800px;
+    background: blue url(../imgs/backgrounds/details_photo_bridge.jpg) no-repeat;
+    background-origin: content-box;
+    position: absolute;
+}
+
+.details_item_accent_bridge{
+    position:relative;
+}
+
+.details_item_full{
+    color: white;
+}
+
+.details_item_text{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.details_item_accent{
+    width: 1200px;
+    align-items: center;
+    background-color: #82b3d3;
+}
+
+.details_item_num{
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.details_city_advantages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.details_city_wrapper{
+    padding: 182px 85px 81px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.details_city_wrapper_honest{
+    background-color: white;
+}
+
+.details_city_advantages{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;    
+}
+
+.details_city_advantages_wrapper{
+    padding: 103px 85px 102px;
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.details_city_advantages_wrapper_honest{
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+.hotel_search_title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hotel_search_text{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+}
+
+.btn_search_hotels{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subscription_index{
+    background: url(../imgs/backgrounds/back_subscription.jpg) no-repeat rgb(77, 77, 155);  
+    width: 1200px;
+    height: 411px;
+}
+
+.subscription_wrapper{
+    padding: 94px 200px;
+    margin: 0;
+}
+
+.subscription_title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.subscription_text{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    padding: 0 0 29px 0;
+}
+
+#subscription{
+    display:inline-block;
+    width: 600px;
+    height: 60px;
+    border: 1px soplid black;
+    border-radius: 10px 0 0 10px;
+    background-color: white;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.btn_subscription{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 60px;
+    width:  200px;
+    background-color: #82B3D3;
+    margin: 0;
+    padding: 12px 15px;
+}
+
+/* Catalog  */
+
+.breadcrumbs{
+    display: flex;
+    list-style: none;
+}
+
+.rating_stars{
+    display: flex;
+    list-style: none;
+}
+
+.pagination_list{
+    display: flex;
+    list-style: none;
+}
+
+
+
+
