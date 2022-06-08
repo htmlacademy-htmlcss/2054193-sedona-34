@@ -11,39 +11,40 @@
 
       <div class="wrapper_main_menu">
 
-        <a href="index.html"> 
-          <img class="logo_img" src="imgs/logo.svg" width="179" hight="70" alt="Логотип.">
+        <a class="index_link">
+          <img class="logo_img" src="imgs/logo.svg" width="139" height="70" alt="Логотип.">
         </a>
 
-        <nav class="main_menu">
-          <ul class="main_menu_list">
-            <li class="main_menu_item"><a class="nav_item_link" href="index.html">Главная</a></li>
-            <li class="main_menu_item"><a class="nav_item_link" href="#">О Седоне</a></li>
-            <li class="main_menu_item"><a class="nav_item_link" href="#">Гостиницы</a></li>
-          </ul> 
-        </nav>
+        <div class="wrapper_all_menu">
 
-        <nav class="control_menu">
-          <ul class="control_menu_list">
-            <li class="control_menu_item">
-              <a href="#">
-                <img src="imgs/icons/ico_search.svg" width="18" hight="18" alt="Поиск по сайту.">
-              </a>
-            </li>
+          <nav class="main_menu">
+            <ul class="main_menu_list">
+              <li class="main_menu_item"><a class="nav_item_link" href="index.html">Главная</a></li>
+              <li class="main_menu_item"><a class="nav_item_link" href="#">О Седоне</a></li>
+              <li class="main_menu_item"><a class="nav_item_link nav_item_select" href="#">Гостиницы</a></li>
+            </ul> 
+          </nav>
 
-            <li class="control_menu_item">
-              <a href="#">
-                <img src="imgs/icons/ico_favorite.svg" width="18" hight="17" alt="Избранное.">
-              </a>
-            </li>
+          <nav class="control_menu">
+            <ul class="control_menu_list">
+              <li class="control_menu_item">
+                <a class="control_item_link" href="#">
+                  <img src="imgs/icons/ico_search.svg" width="18" height="18" alt="Поиск по сайту.">
+                </a>
+              </li>
+              <li class="control_menu_item control_favorite">
+                <a class="control_item_link" href="#">
+                  <img class="img_ico_favorite" src="imgs/icons/ico_favorite.svg" width="18" height="17" alt="Избранное.">
+                </a>
+              </li>
+              <li class="control_menu_item">
+                <a class="link_wanted" href="#">Хочу сюда!</a>
+              </li>
+            </ul> 
+          </nav>
 
-            <li class="control_menu_item">
-              <a class="link_wanted" href="#">Хочу сюда!</a>
-            </li>
-
-          </ul> 
-        </nav>
-
+        </div>
+      
       </div>
 
     </header>
@@ -58,7 +59,7 @@
 
         <ul class="breadcrumbs">
           <li class="breadcrumbs_item">
-            <img src="imgs/icons/icon_hotel.png" alt="Иконка 'Гостиницы.'">
+            <img src="imgs/icons/ico_hotel.svg" alt="Иконка 'Гостиницы.'">
           </li>
           <li class="breadcrumbs_item breadcrumbs_text">
               Гостиницы
@@ -430,25 +431,29 @@
 
     <footer class="page-footer">
 
-      <section class="subscription subscription_catalog">
+      <section class="subscription subscription_index">
 
-        <h2 class="subscription_title">
-          Подпишитесь на рассылку
-        </h2>
+        <div class="subscription_wrapper">
+
+          <h2 class="subscription_title">
+            Подпишитесь на рассылку
+          </h2>
  
-        <p class="subscription_text">
-          Только полезная информация и никакого спама, честное бойскаутское!
-        </p>
+          <p class="subscription_text">
+            Только полезная информация и никакого спама, честное бойскаутское!
+          </p>
 
-        <form class="form_subscription">
+          <form class="form_subscription">
 
-          <label for="subscription">Ваш e-mail</label>
+            <label for="subscription" class="subscription_label"></label>
 
-          <input type="text" id="subscription" name="subscription">
+            <input type="text" id="subscription" name="subscription">
 
-          <button class="btn_subscription">Подписаться</button>
+            <button class="btn_subscription">Подписаться</button>
 
-        </form>
+          </form>
+
+        </div>
 
       </section>
 
@@ -457,15 +462,15 @@
         <ul class="connection_list">
 
           <li class="connection_item">
-            <a href="https://vk.com/htmlacademy"><img src="imgs/icons/icon_vk.png" alt="Иконка 'Вконтакте'."></a>
+            <a href="https://vk.com/htmlacademy"><img src="imgs/icons/ico_vk.svg" width="24" height="14" alt="Иконка 'Вконтакте'."></a>
           </li>
 
           <li class="connection_item">
-            <a href="https://t.me/htmlacademy"><img src="imgs/icons/icon_telegram.png" alt="Иконка 'Телеграм'."></a>  
+            <a href="https://t.me/htmlacademy"><img src="imgs/icons/ico_telegram.svg" width="18" height="16" alt="Иконка 'Телеграм'."></a>  
           </li>
 
           <li class="connection_item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="imgs/icons/icon_utube.png" alt="Иконка 'Ютуб'."></a> 
+            <a href="https://www.youtube.com/user/htmlacademyru"><img src="imgs/icons/ico_utube.svg" width="22" height="17" alt="Иконка 'Ютуб'."></a> 
           </li>
 
         </ul>
@@ -476,7 +481,7 @@
 
         <div class="html_academy_link">
           <a href="https://htmlacademy.ru">
-            <img src="imgs/png/html _academy.png" alt="Логотип htmlacademy.">
+            <img src="imgs/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.">
           </a> 
         </div>
 

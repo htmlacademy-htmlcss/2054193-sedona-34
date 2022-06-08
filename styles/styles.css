@@ -2,7 +2,7 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/pt-sans-regular.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display: swap;
   }
   
@@ -10,12 +10,12 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/pt-sans-bold.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display: swap;
   }
 
 body{
-    font-family: "PT Sans", sans-serif;
+    font-family: "PT Sans", "Calibri", sans-serif;
     font-size: 18px;
     line-height: 21px;
     width: 1200px;
@@ -28,40 +28,73 @@ body{
     display: none;
 }
 
+.main-menu{
+    padding: 0;
+    margin: 0;
+}
+
 .wrapper_main_menu{
     display: flex;
-    height: 65px;
+    height: 66px;
     align-items: center;
+}
+
+.logo_img{
+    display:inline-block;
+    margin: 4px 30px 0 70px;
+}
+
+.wrapper_all_menu{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .main_menu_list{
     display: flex;
     list-style: none;
-    justify-content: center;
-    width: 390px;
+    justify-content: space-between;
+    align-items: center;
     height: 66px;
+    padding: 0;
+    margin: 0 auto;
 }
 
-.main_menu_item{
+.nav_item_link{
     list-style: none;
-    padding: 0;
+    padding: 20px 0;
     margin: auto 17px;
+}
+
+.nav_item_select{
+    box-shadow: inset 0 -2px 0 0 rgba(117, 98, 87, 1);
+    overflow: hidden;   
+}
+
+.control-menu{
+    padding: 0;
+    margin: 0;
 }
 
 .control_menu_list{
     display: flex;
     list-style: none;
     justify-content: center;
-    width: 263.87px;
+    align-items: center;
     height: 66px;
-    margin-left: 237px;
+    padding: 0;
+    margin: 0 0 0 auto;
+}
+
+.control_item_link{
+    list-style: none;
+    padding: 20px 12px;
+    margin: auto 17px;
+    margin: 0;
 }
 
 .control_menu_item{
-    list-style: none;
-    padding: 0;
-    margin: auto 34px;
-    
+    list-style: none;   
 }
 
 .nav_item_link{
@@ -72,8 +105,28 @@ body{
     text-decoration: none;
 }
 
-.num_favorites{
+.control_favorite{
     position: relative;
+}
+
+.control_favorite::after{
+    display: inline-block;
+    content: "12";
+    width: 18px;
+    height: 18px;
+    border: 1px solid rgba(125, 181, 79, 1);
+    border-radius: 50%;
+    background-color: rgba(125, 181, 79, 1);;
+    font-size: 10px;
+    line-height: 20px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    left: 24px;
+    top: -10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .link_wanted{
@@ -89,6 +142,7 @@ body{
     height: 37px;
     border-radius: 4px;
     text-transform: uppercase;
+    margin: 14px 70px 14px 20px;
 }
 
 .wrapper_title_Sedona{
