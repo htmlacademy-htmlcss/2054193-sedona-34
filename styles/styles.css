@@ -22,6 +22,11 @@ body{
     padding: 0;
     margin: auto;
     box-shadow: 0 0 5px 5px #ccc;
+    background-color: #e5e5e5;
+}
+
+main{
+    background-color: white;
 }
 
 .visually_hidden{
@@ -37,11 +42,13 @@ body{
     display: flex;
     height: 66px;
     align-items: center;
+    background-color: white;
 }
 
 .logo_img{
     display:inline-block;
     margin: 4px 30px 0 70px;
+    z-index: 10;
 }
 
 .wrapper_all_menu{
@@ -109,29 +116,34 @@ body{
     position: relative;
 }
 
-.control_favorite::after{
+.num_favorite{
     display: inline-block;
-    content: "12";
+    content: "";
     width: 18px;
     height: 18px;
     border: 1px solid rgba(125, 181, 79, 1);
     border-radius: 50%;
     background-color: rgba(125, 181, 79, 1);;
-    font-size: 10px;
-    line-height: 20px;
-    font-weight: 400;
+    
     color: white;
     text-align: center;
-    line-height: 18px;
+    line-height: 13px;
     position: absolute;
     left: 24px;
     top: -10px;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.num_favorite_text{
+    font-size: 10px;
+    font-weight: 400;
+    margin: 2.5px 0 4.5px 0;
+}
+
 .link_wanted{
+    display: inline-block;
     font-size: 16px;
-    line-height: 37px;
+    line-height: 20px;
     font-weight: 700;
     text-align: center;
     color: white;
@@ -143,6 +155,13 @@ body{
     border-radius: 4px;
     text-transform: uppercase;
     margin: 14px 70px 14px 20px;
+}
+
+.link_wanted_text{
+    display: inline-block;
+    vertical-align: middle;
+    width: 130px;
+    margin: 9px 15px 8px 15px;
 }
 
 .wrapper_title_Sedona{
@@ -159,7 +178,6 @@ body{
     background: url(../imgs/divider.svg) no-repeat transparent;  
     width: 1200px;
     height: 57px;
-    z-index: 10;
     position: absolute;
     bottom: 0px;
 }
@@ -249,7 +267,6 @@ body{
 
 .details_item_accent_bridge{
     display: flex;
-    position:relative;
 }
 
 .details_item_accent_bridge::before{
@@ -259,7 +276,6 @@ body{
     width: 800px;
     background: blue url(../imgs/backgrounds/details_photo_bridge.jpg) no-repeat;
     background-origin: content-box;
-    position: absolute;
 }
 
 .details_item_full{
@@ -283,7 +299,6 @@ body{
     padding: 0;
     margin-bottom: 30px;;
 }
-
 
 .details_item_accent{
     width: 1200px;
@@ -332,6 +347,37 @@ body{
 .details_city_wrapper{
     width: 230px;
     height: 121px;
+    position: relative;
+}
+
+.details_city_wrapper_home::after{
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    background: url(../imgs/icons/ico_list_home.svg) no-repeat;
+    top: -105px;
+    left: 76px;
+}
+
+.details_city_wrapper_food::after{
+    content: "";
+    width: 75px;
+    height: 72px;
+    position: absolute;
+    background: url(../imgs/icons/ico_list_food.svg) no-repeat;
+    top: -105px;
+    left: 76px;
+}
+
+.details_city_wrapper_surprise::after{
+    content: "";
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    background: url(../imgs/icons/ico_list_surprise.svg) no-repeat;
+    top: -105px;
+    left: 76px;
 }
 
 .details_city_advantages_wrapper{
@@ -367,32 +413,39 @@ body{
     margin: 0px 304px 56px;
 }
 
-.btn_search_hotels{
-    
-    font-size: 20px;
-    line-height: 60px;
-    font-weight: 700;
-    text-align: center;
-    color: white;
-    text-decoration: none;
+.btn_search_hotels{   
     display:inline-block;
     background-color: #756157;
     width: 574px;
     height: 60px;
     border-radius: 4px;
     text-transform: uppercase;
+    text-decoration: none;
     margin: 0 313px 93px;   
+}
+
+.btn_search_hotels_text{
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    text-align: center;
+    color: white;
+    margin: 12px 15px;
 }
 
 .subscription_index{
     background: url(../imgs/backgrounds/back_subscription.jpg) no-repeat rgb(77, 77, 155);  
     width: 1200px;
     height: 411px;
+    margin: 0;
+    padding: 0;
 }
 
 .subscription_wrapper{
-    padding: 94px 200px;
+    width: 800px;
+    height: 223px;
     margin: 0;
+    padding: 94px 200px;
 }
 
 .subscription_title{
@@ -402,6 +455,9 @@ body{
     text-align: center;
     color: white;
     text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 29px;
 }
 
 .subscription_text{
@@ -410,35 +466,130 @@ body{
     font-weight: 400;
     text-align: center;
     color: white;
-    padding: 0 0 29px 0;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 46px;
 }
 
-#subscription{
+.form_subscription{
+    height: 60px;
+}
+
+.wrapper_subscription{
+    display: flex;
+}
+
+.subscription_input{
     display:inline-block;
     width: 600px;
     height: 60px;
-    border: 1px soplid black;
+    border-width: 0;
     border-radius: 10px 0 0 10px;
-    background-color: white;
-    position: relative;
+    background-color: #f2f2f2;
     padding: 0;
     margin: 0;
+    box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .btn_subscription{
-    font-size: 22px;
-    line-height: 26px;
-    font-weight: 400;
-    text-align: center;
+    display: inline-block;
     color: white;
     text-transform: uppercase;
-    display: inline-block;
     height: 60px;
     width:  200px;
     background-color: #82B3D3;
     margin: 0;
     padding: 12px 15px;
+    text-align: center;
+    border-width: 0;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
 }
+
+.btn_subscription_text{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;    
+}
+
+.wrapper_footer_content{
+    width: 1200px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper_footer_nav{
+    display: flex;
+    width: 1060px;
+    height: 50px;
+    padding: 40px 70px 30px;
+    justify-content: space-between;
+}
+
+.connection_list{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 5px auto 5px 0;
+    width: 142px;
+    height: 40px;
+}
+
+.connection_item{
+    display: flex;
+    padding: 0;
+    margin:0;
+    width: 33.33%;
+    flex-basis: auto;
+    flex-shrink: 1;
+}
+
+.connection_item_link{
+    width: 142px;
+    height: 40px;
+    margin: 0;
+    padding:0;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_connection{
+    display: block;  
+}
+
+.wrapper_phone{
+    margin: auto;
+    padding: 0;
+}
+
+.html_academy_link{
+    margin: auto 0 auto auto;
+    padding: 0;
+}
+
+.phone_number{
+    text-decoration: none;
+    color: black;
+    font-style: normal;
+}
+
+.number_text{
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 400;   
+}
+
+/* Modal  */
+
+.modal_form{
+    display: none;
+}
+
 
 /* Catalog  */
 
