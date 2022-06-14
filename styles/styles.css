@@ -30,7 +30,16 @@ main{
 }
 
 .visually_hidden{
-    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-menu{
@@ -441,6 +450,10 @@ main{
     padding: 0;
 }
 
+.subscription_wrapper_catalog{
+    background: white;
+}
+
 .subscription_wrapper{
     width: 800px;
     height: 223px;
@@ -471,6 +484,10 @@ main{
     margin-bottom: 46px;
 }
 
+.subscription_catalog{
+    color: black;
+}
+
 .form_subscription{
     height: 60px;
 }
@@ -480,15 +497,31 @@ main{
 }
 
 .subscription_input{
+    font-family: inherit;
     display:inline-block;
     width: 600px;
     height: 60px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
     border-width: 0;
     border-radius: 10px 0 0 10px;
     background-color: #f2f2f2;
-    padding: 0;
+    padding: 0 0 0 22px;
     margin: 0;
     box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.subscription_input::placeholder{
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba (0,0,0,0.6);
+}
+
+.subscription_input_catalog{
+    box-shadow: none;
 }
 
 .btn_subscription{
@@ -518,7 +551,7 @@ main{
     height: 120px;
     margin: 0;
     padding: 0;
-
+    background-color: white;
 }
 
 .wrapper_footer_nav{
@@ -593,9 +626,317 @@ main{
 
 /* Catalog  */
 
+.menu_hotels{
+    width: 1060px;
+    height: 298px;
+    background: rgb(79, 71, 95) url(../imgs/backgrounds/back_search_hotels.jpg) no-repeat;
+    padding: 35px 70px 70px;
+    color: white;
+}
+
+.hotels_title{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 78px;
+    color: white;
+    margin: 0 0 10px;
+    padding: 0;
+}
+
 .breadcrumbs{
     display: flex;
     list-style: none;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    height: 21px;
+    justify-content: left;
+}
+
+.breadcrumbs_home{
+    cursor: pointer;
+}
+
+.breadcrumbs_text{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumbs_text::before{
+    content: "";
+    display: inline-block;
+    background: url(../imgs/arrow_right.svg) no-repeat;
+    height: 9px; 
+    width: 5.11px;
+    margin: 0 9px;
+}
+
+.filter_hotels_form{
+    display: flex;
+    width: 1059.53px;
+    height: 149px;
+}
+
+.hotels_details{
+    display: flex;
+    flex-direction: column;
+    border-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 70px;
+}
+
+.check_hotels{
+    display: none;
+}
+
+.radio_hotels{
+    display: none;
+}
+
+.hotels_details_types{
+    margin-right: 0;
+}
+
+
+.fieldhotel_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.fieldhotel_text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.fieldhotel_text:last-child{
+    margin-bottom: 0;
+}
+
+.fieldhotel_check{
+    position: relative;
+    margin-left: 40px;
+}
+
+.fieldhotel_check::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../imgs/check_empty.svg) no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -40px;
+    cursor: pointer;
+}
+
+.fieldhotel_radio{
+    position: relative;
+    margin-left: 40px;
+}
+
+.fieldhotel_radio::before{
+    content: "";
+    display: inline-block;
+    width: 21px;
+    height: 20px;
+    background: url(../imgs/radio_empty.svg) no-repeat;
+    position: absolute;
+    top: -2px;
+    left: -40px;
+    cursor: pointer;
+}
+
+.check_checked::before{
+    background: url(../imgs/check_checked.svg) no-repeat;
+}
+
+.radio_checked::before{
+    background: url(../imgs/radio_checked.svg) no-repeat;
+}
+
+.hotel_price{
+    padding: 0;
+    margin: 0;
+    width: 287.81px;
+    margin-left: auto;
+    margin-right: 70px;
+    border-style: none;
+}
+
+.fieldprice_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.price_wrapper{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 32px;
+}
+
+.min_price{
+    padding: 0;
+    width: 140px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 4px 0 0 4px;
+}
+
+.max_price{
+    padding: 0;
+    width: 140px;
+    height: 40px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 0 4px 4px 0;
+}
+
+.slider_fill{
+    display: inline-block;
+    width: 230px;
+    height: 4px;
+    background-color: white;
+    position: relative;
+}
+
+.slider_fill::after{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.slider_fill::before{
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    background-color: white;
+    position: absolute;
+    top: -8px;
+    left: 220px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.slider_not_fill{
+    display: inline-block;
+    width: 58px;
+    height: 4px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.slider_wrapper{
+    display: flex;
+}
+
+.catalog_wrapper_btns{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.btn_apply{
+    width: 160px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    background-color: #82B3D3;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn_apply_text{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    color: white;
+    margin: auto;
+}
+
+.btn_reset{
+    display: flex;
+    width: 160px;
+    height: 48px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-style: none;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.btn_reset_text{
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.hotels_nav_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hotels_view_type{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wrapper_hotels_list{
+    margin: 0;
+    padding: 50px 71px 25px 72px;
+}
+
+.hotels_list{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    margin: -9px;
+}
+
+.hotels_list_item{
+    margin: 0 9px;
+    padding: 20px;
 }
 
 .rating_stars{

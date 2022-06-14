@@ -36,9 +36,14 @@
                 <a class="control_item_link" href="#">
                   <img class="img_ico_favorite" src="imgs/icons/ico_favorite.svg" width="18" height="17" alt="Избранное.">
                 </a>
+                <div class="num_favorite">
+                  <div class="num_favorite_text">
+                    12
+                  </div>
+                </div>
               </li>
               <li class="control_menu_item">
-                <a class="link_wanted" href="#">Хочу сюда!</a>
+                <a class="link_wanted" href="#"><span class="link_wanted_text">Хочу сюда!</span></a>
               </li>
             </ul> 
           </nav>
@@ -53,107 +58,124 @@
 
       <section class="filter">
 
-        <h1 class="hotels_title">
-          Гостиницы Седоны
-        </h1>
+        <div class="menu_hotels">
 
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs_item">
-            <img src="imgs/icons/ico_hotel.svg" alt="Иконка 'Гостиницы.'">
-          </li>
-          <li class="breadcrumbs_item breadcrumbs_text">
-              Гостиницы
-          </li>
-        </ul>
+          <h1 class="hotels_title">
+            Гостиницы Седоны
+          </h1>
 
-        
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs_item breadcrumbs_home">
+              <a href="index.html">
+                <img src="imgs/icons/ico_hotel.svg" width="12" height="11.7" alt="Иконка 'Гостиницы.'">
+              </a>
+            </li>
+            <li class="breadcrumbs_item breadcrumbs_text">Гостиницы</li>
+          </ul>
 
-        <form class="filter_hotels_form">
+          <form class="filter_hotels_form">
 
-          <fieldset class="hotels_details">
+            <fieldset class="hotels_details hotels_details_structure">
 
-            <legend>Инфраструктура</legend>
+              <legend class="fieldhotel_title">Инфраструктура:</legend>
 
-            <input type="checkbox" name="check_pool" id="check_pool">
-            <label for="check_pool">Бассейн</label>
+              <input type="checkbox" name="check_pool" id="check_pool" class="check_hotels">
+              <label for="check_pool" class="fieldhotel_text fieldhotel_check check_checked">Бассейн</label>
 
-            <input type="checkbox" name="check_parking" id="check_parking">
-            <label for="check_parking">Парковка</label>
+              <input type="checkbox" name="check_parking" id="check_parking" class="check_hotels">
+              <label for="check_parking" class="fieldhotel_text fieldhotel_check check_checked">Парковка</label>
 
-            <input type="checkbox" name="check_wifi" id="check_wifi">
-            <label for="check_wifi">Wi-fi</label>
+              <input type="checkbox" name="check_wifi" id="check_wifi" class="check_hotels">
+              <label for="check_wifi" class="fieldhotel_text fieldhotel_check">Wi-fi</label>
 
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="hotels_details">
+            <fieldset class="hotels_details hotels_details_types">
 
-            <legend>Тип жилья:</legend>
+              <legend class="fieldhotel_title">Тип жилья:</legend>
 
-            <input type="radio" name="radio_hotel" id="radio_hotel">
-            <label for="radio_hotel">Гостиница</label>
+              <input type="radio" name="radio_hotel" id="radio_hotel" class="radio_hotels">
+              <label for="radio_hotel" class="fieldhotel_text fieldhotel_radio radio_checked">Гостиница</label>
 
-            <input type="radio" name="radio_motel" id="radio_motel">
-            <label for="radio_motel">Мотель</label>
+              <input type="radio" name="radio_motel" id="radio_motel" class="radio_hotels">
+              <label for="radio_motel" class="fieldhotel_text fieldhotel_radio">Мотель</label>
 
-            <input type="radio" name="radio_apartments" id="radio_apartments">
-            <label for="radio_apartments">Апартаменты</label>
+              <input type="radio" name="radio_apartments" id="radio_apartments" class="radio_hotels">
+              <label for="radio_apartments" class="fieldhotel_text fieldhotel_radio">Апартаменты</label>
 
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="hotel_price">
+            <fieldset class="hotel_price">
 
-            <label for="min_price"></label>
-            <input type="text" name="min_price" id="min_price">
-            <div class="min_price_slider">&#65794;</div>
+              <legend class="fieldprice_title">Стоимость, &#8381;:</legend>
 
-            <label for="max_price"></label>
-            <input type="text" name="max_price" id="max_price">
-            <div class="min_price_slider">&#65794;</div>
+              <div class="price_wrapper">
 
-          </fieldset>
+                <label for="min_price"></label>
+                <input type="text" name="min_price" id="min_price" class="min_price">
+              
+                <label for="max_price"></label>
+                <input type="text" name="max_price" id="max_price" class="max_price">
 
-          <div class="catalog_wrapper_btns">
+              </div>
 
-            <button class="btn_apply">Применить</button>
-            <button class="btn_reset">Сбросить</button>
+              <div class="slider_wrapper">
 
-          </div>
+                <div class="slider_fill"></div>
+                <div class="slider_not_fill"></div>
 
-        </form>
+              </div>
+
+            </fieldset>
+
+            <div class="catalog_wrapper_btns">
+
+              <button class="btn_apply"><div class="btn_apply_text">Применить</div></button>
+              <button class="btn_reset"><div class="btn_reset_text">Сбросить</div></button>
+
+            </div>
+
+          </form>
+
+        </div>
 
         <section class="wrapper_hotels_list">
 
           <h2 class="visually_hidden">Поиск гостиницы в Седоне</h2>
 
-          <p class="hotels_num_text">
-            Найдено гостиниц: 38
-          </p>
+          <div class="hotels_nav_wrapper">
+
+            <p class="hotels_num_text">
+              Найдено гостиниц: 38
+            </p>
           
-          <select class="select_hotels">
-            <option>Сначала дешёвые</option>
-          </select>
+            <select class="select_hotels">
+              <option>Сначала дешёвые</option>
+            </select>
 
-          <ul class="hotels_view_type">
+            <ul class="hotels_view_type">
 
-            <li class="view_type_item">
-              <a class="view_type_link">
-                <img src="#" class="img_view" alt="Отображение 'плиткой'.">
-              </a>
-            </li>
+              <li class="view_type_item">
+                <a class="view_type_link">
+                  <img src="imgs/icons/ico_view1.svg"  width="48" height="48" class="img_view" alt="Отображение 'плиткой'.">
+                </a>
+              </li>
 
-            <li class="view_type_item">
-              <a class="view_type_link">
-                <img src="#" class="img_view" alt="Отображение 'слайд с увеличением'.">
-              </a>
-            </li>
+              <li class="view_type_item">
+                <a class="view_type_link">
+                  <img src="imgs/icons/ico_view2.svg"  width="48" height="48" class="img_view" alt="Отображение 'слайд с увеличением'.">
+                </a>
+              </li>
 
-            <li class="view_type_item">
-              <a class="view_type_link">
-                <img src="#" class="img_view" alt="Отображение 'списком'.">
-              </a>
-            </li> 
+              <li class="view_type_item">
+                <a class="view_type_link">
+                  <img src="imgs/icons/ico_view3.svg"  width="48" height="48" class="img_view" alt="Отображение 'списком'.">
+                </a>
+              </li> 
 
-          </ul>
+            </ul>
+
+          </div>
 
           <ul class="hotels_list">
 
@@ -431,25 +453,27 @@
 
     <footer class="page-footer">
 
-      <section class="subscription subscription_index">
+      <section class="subscription subscription_index subscription_wrapper_catalog">
 
-        <div class="subscription_wrapper">
+        <div class="subscription_wrapper ">
 
-          <h2 class="subscription_title">
+          <h2 class="subscription_title subscription_catalog">
             Подпишитесь на рассылку
           </h2>
  
-          <p class="subscription_text">
-            Только полезная информация и никакого спама, честное бойскаутское!
+          <p class="subscription_text subscription_catalog">
+            Только полезная информация и никакого спама, <br>честное бойскаутское!
           </p>
 
           <form class="form_subscription">
 
-            <label for="subscription" class="subscription_label"></label>
+            <div class="wrapper_subscription">
+              <label for="subscription" class="subscription_label"></label>
 
-            <input type="text" id="subscription" name="subscription">
+              <input type="text" id="subscription" placeholder="Ваш email" class="subscription_input subscription_input_catalog" name="subscription">
 
-            <button class="btn_subscription">Подписаться</button>
+              <button class="btn_subscription"><div class="btn_subscription_text">Подписаться</div></button>
+            </div>
 
           </form>
 
@@ -459,30 +483,40 @@
 
       <div class="wrapper_footer_content">
 
-        <ul class="connection_list">
+        <div class="wrapper_footer_nav">
 
-          <li class="connection_item">
-            <a href="https://vk.com/htmlacademy"><img src="imgs/icons/ico_vk.svg" width="24" height="14" alt="Иконка 'Вконтакте'."></a>
-          </li>
+          <ul class="connection_list">
 
-          <li class="connection_item">
-            <a href="https://t.me/htmlacademy"><img src="imgs/icons/ico_telegram.svg" width="18" height="16" alt="Иконка 'Телеграм'."></a>  
-          </li>
+            <li class="connection_item">
+              <a class="connection_item_link" href="https://vk.com/htmlacademy">
+                <img class="img_connection" src="imgs/icons/ico_vk.svg" width="24" height="14" alt="Иконка 'Вконтакте'.">
+              </a>
+            </li>
 
-          <li class="connection_item">
-            <a href="https://www.youtube.com/user/htmlacademyru"><img src="imgs/icons/ico_utube.svg" width="22" height="17" alt="Иконка 'Ютуб'."></a> 
-          </li>
+            <li class="connection_item">
+              <a class="connection_item_link" href="https://t.me/htmlacademy">
+                <img class="img_connection" src="imgs/icons/ico_telegram.svg" width="18" height="16" alt="Иконка 'Телеграм'.">
+              </a>  
+            </li>
 
-        </ul>
+            <li class="connection_item">
+              <a class="connection_item_link" href="https://www.youtube.com/user/htmlacademyru">
+                <img class="img_connection" src="imgs/icons/ico_utube.svg" width="22" height="17" alt="Иконка 'Ютуб'.">
+              </a> 
+            </li>
 
-        <address class="phone number">
-          <a href="#"><span class="connection_icon">+7 (812) 812-12-12</span></a> 
-        </address>
+          </ul>
 
-        <div class="html_academy_link">
-          <a href="https://htmlacademy.ru">
-            <img src="imgs/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.">
-          </a> 
+          <address class="wrapper_phone">
+            <a class="phone_number" href="#"><span class="number_text">+7 (812) 812-12-12</span></a> 
+          </address>
+
+          <div class="html_academy_link">
+            <a href="https://htmlacademy.ru">
+              <img src="imgs/logo_htmlacademy.svg" width="115" height="34" alt="Логотип htmlacademy.">
+            </a> 
+          </div>
+
         </div>
 
       </div>
