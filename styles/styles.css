@@ -225,7 +225,6 @@ main{
 
 .wrapper_text_details{
     width: 230px;
-    height: 200px;
     padding: 0;
     margin: 0;
 }
@@ -353,7 +352,6 @@ main{
 
 .details_city_wrapper{
     width: 230px;
-    height: 121px;
     position: relative;
 }
 
@@ -393,7 +391,7 @@ main{
 }
 
 .details_city_wrapper_honest{
-    background-color: white;
+    background-color: #fff;
 }
 
 .details_city_advantages_wrapper_honest{
@@ -632,7 +630,6 @@ main{
 
 .menu_hotels{
     width: 1060px;
-    height: 298px;
     background: rgb(79, 71, 95) url(../imgs/backgrounds/back_search_hotels.jpg) no-repeat;
     padding: 35px 70px 70px;
     color: #fff;
@@ -682,7 +679,6 @@ main{
 .filter_hotels_form{
     display: flex;
     width: 1059.53px;
-    height: 149px;
 }
 
 .hotels_details{
