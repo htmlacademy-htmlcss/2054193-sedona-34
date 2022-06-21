@@ -77,14 +77,14 @@
 
             <legend class="fieldhotel_title">Инфраструктура:</legend>
 
-            <input type="checkbox" name="check_pool" id="check_pool" class="check_hotels">
-            <label for="check_pool" class="fieldhotel_text fieldhotel_check check_checked">Бассейн</label>
+            <input class="check_hotels" type="checkbox" name="check_pool" id="check_pool">
+            <label class="fieldhotel_text fieldhotel_check check_checked" for="check_pool">Бассейн</label>
 
-            <input type="checkbox" name="check_parking" id="check_parking" class="check_hotels">
-            <label for="check_parking" class="fieldhotel_text fieldhotel_check check_checked">Парковка</label>
+            <input class="check_hotels" type="checkbox" name="check_parking" id="check_parking">
+            <label class="fieldhotel_text fieldhotel_check check_checked" for="check_parking">Парковка</label>
 
-            <input type="checkbox" name="check_wifi" id="check_wifi" class="check_hotels">
-            <label for="check_wifi" class="fieldhotel_text fieldhotel_check">Wi-fi</label>
+            <input class="check_hotels" type="checkbox" name="check_wifi" id="check_wifi">
+            <label class="fieldhotel_text fieldhotel_check" for="check_wifi">Wi-fi</label>
 
           </fieldset>
 
@@ -92,14 +92,14 @@
 
             <legend class="fieldhotel_title">Тип жилья:</legend>
 
-            <input type="radio" name="radio_hotel" id="radio_hotel" class="radio_hotels">
-            <label for="radio_hotel" class="fieldhotel_text fieldhotel_radio radio_checked">Гостиница</label>
+            <input class="radio_hotels" type="radio" name="radio_hotel" id="radio_hotel">
+            <label class="fieldhotel_text fieldhotel_radio radio_checked" for="radio_hotel">Гостиница</label>
 
-            <input type="radio" name="radio_motel" id="radio_motel" class="radio_hotels">
-            <label for="radio_motel" class="fieldhotel_text fieldhotel_radio">Мотель</label>
+            <input class="radio_hotels" type="radio" name="radio_motel" id="radio_motel">
+            <label class="fieldhotel_text fieldhotel_radio" for="radio_motel">Мотель</label>
 
-            <input type="radio" name="radio_apartments" id="radio_apartments" class="radio_hotels">
-            <label for="radio_apartments" class="fieldhotel_text fieldhotel_radio">Апартаменты</label>
+            <input class="radio_hotels" type="radio" name="radio_apartments" id="radio_apartments">
+            <label class="fieldhotel_text fieldhotel_radio" for="radio_apartments">Апартаменты</label>
 
           </fieldset>
 
@@ -110,10 +110,10 @@
             <div class="price_wrapper">
 
               <label class="label_min" for="min_price">от</label>
-              <input type="text" placeholder="0" maxlength="6" name="min_price" id="min_price" class="min_price">
+              <input class="min_price" type="text" placeholder="0" maxlength="6" name="min_price" id="min_price">
               
               <label class="label_max" for="max_price">до</label>
-              <input type="text" placeholder="9000" maxlength="6" name="max_price" id="max_price" class="max_price">
+              <input class="max_price" type="text" placeholder="9000" maxlength="6" name="max_price" id="max_price">
 
             </div>
 
@@ -155,19 +155,19 @@
 
               <li class="view_type_item">
                 <a class="view_type_link">
-                  <img src="imgs/icons/ico_view1.svg"  width="48" height="48" class="img_view" alt="Отображение 'плиткой'.">
+                  <img class="img_view" src="imgs/icons/ico_view1.svg"  width="48" height="48" alt="Отображение 'плиткой'.">
                 </a>
               </li>
 
               <li class="view_type_item">
                 <a class="view_type_link">
-                  <img src="imgs/icons/ico_view2.svg"  width="48" height="48" class="img_view" alt="Отображение 'слайд с увеличением'.">
+                  <img class="img_view" src="imgs/icons/ico_view2.svg"  width="48" height="48" alt="Отображение 'слайд с увеличением'.">
                 </a>
               </li>
 
               <li class="view_type_item">
                 <a class="view_type_link">
-                  <img src="imgs/icons/ico_view3.svg"  width="48" height="48" class="img_view" alt="Отображение 'списком'.">
+                  <img class="img_view" src="imgs/icons/ico_view3.svg"  width="48" height="48" alt="Отображение 'списком'.">
                 </a>
               </li> 
 
@@ -182,7 +182,7 @@
           <li class="hotels_list_item">
 
             <a href="#">
-              <img src="imgs/hotels/hotel_amara.jpg" width="300" height="211" class="hotels_list_item_img" alt="Amara Resort & Spa.">  
+              <img class="hotels_list_item_img" src="imgs/hotels/hotel_amara.jpg" width="300" height="211" alt="Amara Resort & Spa.">  
             </a>
 
             <a class="hotels_list_item_title" href="#">
@@ -206,7 +206,7 @@
 
             <div class="wrapper_rating">
 
-              <ul class="rating_stars rating_stars_Amara">
+              <ul class="rating_stars rating_stars_amara">
                 <li class="rating_stars_item">  
                   <img class="star star_1" width="18" height="17" src="imgs/icons/star.svg" alt="Первая зведа рейтинга.">   
                 </li>
@@ -237,7 +237,7 @@
           <li class="hotels_list_item">
 
             <a href="#">
-              <img src="imgs/hotels/hotel_villas.jpg" width="300" height="211" class="hotels_list_item_img" alt="Villas at Poco Diablo.">  
+              <img class="hotels_list_item_img" src="imgs/hotels/hotel_villas.jpg" width="300" height="211" alt="Villas at Poco Diablo.">  
             </a>
 
             <a class="hotels_list_item_title" href="#">
@@ -261,7 +261,7 @@
 
             <div class="wrapper_rating">
 
-              <ul class="rating_stars rating_stars_Villas">
+              <ul class="rating_stars rating_stars_villas">
                 <li class="rating_stars_item">  
                   <img class="star star_1" width="18" height="17" src="imgs/icons/star.svg" alt="Первая зведа рейтинга.">   
                 </li>
@@ -292,7 +292,7 @@
           <li class="hotels_list_item">
 
             <a href="#">
-              <img src="imgs/hotels/hotel_desert.jpg" width="300" height="211" class="hotels_list_item_img" alt="Desert Quail Inn.">  
+              <img class="hotels_list_item_img" src="imgs/hotels/hotel_desert.jpg" width="300" height="211" alt="Desert Quail Inn.">  
             </a>
 
             <a class="hotels_list_item_title" href="#">
@@ -316,7 +316,7 @@
 
             <div class="wrapper_rating">
 
-              <ul class="rating_stars rating_stars_Desert">
+              <ul class="rating_stars rating_stars_desert">
                 <li class="rating_stars_item">  
                   <img class="star star_1" width="18" height="17" src="imgs/icons/star.svg" alt="Первая зведа рейтинга.">   
                 </li>
@@ -347,7 +347,7 @@
           <li class="hotels_list_item">
 
             <a href="#">
-              <img src="imgs/hotels/hotel_greenthree.jpg" width="300" height="211" class="hotels_list_item_img" alt="GreenTree Inn.">  
+              <img class="hotels_list_item_img" src="imgs/hotels/hotel_greenthree.jpg" width="300" height="211" alt="GreenTree Inn.">  
             </a>
 
             <a class="hotels_list_item_title" href="#">
@@ -371,7 +371,7 @@
 
             <div class="wrapper_rating">
 
-              <ul class="rating_stars rating_stars_GreenTree">
+              <ul class="rating_stars rating_stars_greentree">
                 <li class="rating_stars_item">  
                   <img class="star star_1" width="18" height="17" src="imgs/icons/star.svg" alt="Первая зведа рейтинга.">   
                 </li>
