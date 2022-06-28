@@ -721,11 +721,27 @@ main {
 }
 
 .btn_close_modal {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: transparent;
 	border-style: none;
 	cursor: pointer;
 	padding: 0;
+	width: 59px;
+	height: 59px;
+	margin: 0;
+}
 
+.img_close_modal {
+	display: block;
+	margin: 0;
+}
+
+.btn_close_modal:focus {
+	outline: none;
+	border: 3px solid #83b3d3;
+	border-radius: 50%;
 }
 
 .modal_entry_wrapper {
@@ -757,7 +773,11 @@ main {
 	border-style: none;
 	border-radius: 4px;
 	position: relative;
+}
 
+.modal_entry_input:focus {
+	outline: none;
+	border: 3px solid #83b3d3;
 }
 
 .modal_entry_input::-webkit-calendar-picker-indicator {
@@ -781,7 +801,6 @@ main {
 	opacity: 1;
 	cursor: pointer;
 }
-
 
 .modal_entry_comment {
 	padding-left: 155px;
@@ -825,6 +844,11 @@ main {
 	background-color: #f2f2f2;
 }
 
+.modal_out_input:focus {
+	outline: none;
+	border: 3px solid #83b3d3;
+}
+
 .modal_out_input::-webkit-calendar-picker-indicator {
 	opacity: 0.01;
 	position: absolute;
@@ -850,7 +874,7 @@ main {
 .modal_out_comment {
 	padding-left: 155px;
 	margin: 0;
-	margin-bottom: 11px;
+	margin-bottom: 10px;
 
 	font-weight: 400;
 	font-size: 16px;
@@ -1383,6 +1407,8 @@ main {
 
 .btn_reset {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100px;
 	height: 32px;
 	padding: 0;
@@ -1392,7 +1418,7 @@ main {
 	justify-content: center;
 	cursor: pointer;
 	position: absolute;
-	top: 128px;
+	top: 122px;
 }
 
 .btn_reset:focus,
@@ -1479,7 +1505,7 @@ main {
 
 .view_type_item {
 	padding: 0;
-  margin: 0;
+  	margin: 0;
 	margin-right: 8px;
 }
 
@@ -1512,6 +1538,7 @@ main {
 }
 
 .view_type_link:focus {
+	outline: none;
   border-color: #68a2ca;
 }
 
