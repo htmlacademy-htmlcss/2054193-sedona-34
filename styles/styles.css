@@ -29,10 +29,6 @@ body {
 	box-shadow: 6px 0 4px -4px #cccccc , -6px 0 4px -4px #cccccc;
 }
 
-main {
-	background-color: white;
-}
-
 .visually_hidden {
 	position: absolute;
 
